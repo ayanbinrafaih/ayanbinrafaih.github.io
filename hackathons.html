@@ -3,16 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#dadfe7" media="(prefers-color-scheme: dark)">
-<title>Programs — Ayan Bin Rafaih</title>
-<meta name="description" content="Hackathons, competitions and programs that Ayan Bin Rafaih has taken part in.">
+<meta name="theme-color" content="#f5f4f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1d1b18" media="(prefers-color-scheme: dark)">
+<title>Competitions — Ayan Bin Rafaih</title>
+<meta name="description" content="Competitions that Ayan Bin Rafaih has taken part in.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css?v=31">
+<link rel="stylesheet" href="css/style.css?v=37">
+<script src="js/theme.js?v=1"></script>
 </head>
 <body>
 
@@ -30,7 +31,7 @@
       <a href="publications.html">Publications</a>
       <a href="presentations.html">Presentations</a>
       <a href="leadership.html">Leadership</a>
-      <a href="hackathons.html" class="is-active">Programs</a>
+      <a href="hackathons.html" class="is-active">Competitions</a>
     </nav>
   </div>
 </header>
@@ -38,22 +39,53 @@
 <main>
 
   <div class="section-inner page-header">
-    <h1>Programs</h1>
+    <h1>Competitions</h1>
     <p>Updated October 2026</p>
   </div>
 
   <section id="hackathons">
     <div class="section-inner section-inner--projects">
 
-      <div class="pub-filters" role="group" aria-label="Filter by type">
-        <button class="pub-filter is-active" data-filter="all">All</button>
-        <button class="pub-filter" data-filter="Competition"><span class="kind-dot kind-dot--competition" aria-hidden="true"></span>Competitions</button>
-        <button class="pub-filter" data-filter="Program"><span class="kind-dot kind-dot--program" aria-hidden="true"></span>Programs</button>
-      </div>
-
       <!-- Cards are sorted newest first by data-date (YYYY-MM, the last month of the event) in js/main.js,
            so a new card can go anywhere in this list. -->
       <div class="hack-list" data-sort="date-desc">
+
+        <article class="hack-card hack-card--competition hack-card--mark-logo" data-topics="Competition" data-date="2026-11">
+          <div class="hack-body">
+            <div class="hack-logo">
+              <img src="assets/img/hackathons/predictions-cup-logo.png" width="400" height="400" alt="Predictions Cup logo" loading="lazy">
+            </div>
+
+            <div class="hack-intro">
+              <div class="hack-meta">
+                <span class="hack-date">November 2026</span>
+              </div>
+              <h3 class="hack-title">Predictions Cup 2026</h3>
+              <p class="hack-org">Susquehanna International Group</p>
+              <p class="hack-desc">An online simulated trading competition for university students, in which each trader starts with 100,000 SUSQies (a non-monetary competition currency) and trades prediction markets on the US midterm elections, ranked by final balance.</p>
+            </div>
+
+            <div class="hack-detail">
+              <h4 class="hack-detail-title">What I built</h4>
+              <ul>
+                <li><strong>Strategy:</strong> discretionary trading in prediction markets for US elections.</li>
+              </ul>
+            </div>
+
+            <figure class="hack-figure">
+              <a href="assets/img/hackathons/sig-sample.png" target="_blank" rel="noopener">
+                <img src="assets/img/hackathons/sig-sample.png" width="1158" height="516" alt="Price history chart for the Midterm Elections market, with volume bars and a price line rising to about 0.88 by 9 November." loading="lazy">
+              </a>
+            </figure>
+          </div>
+
+          <div class="hack-foot">
+            <p class="hack-result">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"></path><path d="M17 6h3v1a3 3 0 0 1-3 3M7 6H4v1a3 3 0 0 0 3 3"></path></svg>
+              <span>Placed <strong>19th of 1,969</strong> traders, with a profit of <strong>+206.4k SUSQies</strong>.</span>
+            </p>
+          </div>
+        </article>
 
         <article class="hack-card hack-card--competition" data-topics="Competition" data-date="2026-09">
           <div class="hack-body">
@@ -63,11 +95,10 @@
 
             <div class="hack-intro">
               <div class="hack-meta">
-                <span class="hack-kind">Competition</span>
                 <span class="hack-date">September 2026</span>
               </div>
               <h3 class="hack-title">AI Chessathon 2026</h3>
-              <p class="hack-org">Sponsored <span class="hack-org-brand">by <img class="hack-org-logo" src="assets/img/optiver-logo.svg" width="109" height="24" alt="Optiver"></span></p>
+              <p class="hack-org">Optiver</p>
               <p class="hack-desc">An online chess engine competition in which each team submits a Python engine (one <code>get_move</code> function on a 120 s clock), which plays a rated ladder and then a Swiss qualifier for the London final.</p>
             </div>
 
@@ -98,39 +129,6 @@
                 Code
               </a>
             </div>
-          </div>
-        </article>
-
-        <article class="hack-card hack-card--program" data-topics="Program" data-date="2026-07">
-          <div class="hack-body hack-body--no-figure">
-            <div class="hack-logo">
-              <img src="assets/img/hackathons/yc-logo.svg" width="256" height="256" alt="Y Combinator logo" loading="lazy">
-            </div>
-
-            <div class="hack-intro">
-              <div class="hack-meta">
-                <span class="hack-kind">Program</span>
-                <span class="hack-date">June–July 2026</span>
-              </div>
-              <h3 class="hack-title">YC Startup School 2026</h3>
-              <p class="hack-org">Y Combinator</p>
-              <p class="hack-desc">Y Combinator's hand-selected events for technical students and builders, with a day of founder talks at STATION F in Paris and 2 days of talks and sessions with YC partners in San Francisco.</p>
-            </div>
-
-            <div class="hack-detail">
-              <h4 class="hack-detail-title">Talks</h4>
-              <ul>
-                <li><strong>Paris, 29 June:</strong> Olivier Pomel (Datadog), Paul Copplestone (Supabase), James Hawkins (PostHog) and YC partner Tom Blomfield.</li>
-                <li><strong>San Francisco, 25–26 July:</strong> Alexandr Wang (Meta), Jensen Huang (NVIDIA), Sam Altman (OpenAI) and Jeff Dean (Google), at the Chase Center.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="hack-foot">
-            <p class="hack-result">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><path d="m8.2 12.4 2.6 2.6 5-5.2"></path></svg>
-              <span>Selected for both the <strong>Paris</strong> and <strong>San Francisco</strong> editions.</span>
-            </p>
           </div>
         </article>
 
